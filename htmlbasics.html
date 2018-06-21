@@ -15,7 +15,47 @@
             <br>
             If you wanna directly go to the footer you click on <a href="#footer">this link</a>.   
             </p>  
-        </main>
+        <!--Form example-->
+        <form action="/submit-country">
+            <!--Input example with type text, placeholder and required in the form-->
+            <input type="text" placeholder="Country of origin:" required>
+            <!--Radio buttons example-->
+            <div>
+                <label for="spades">
+                    <input type="radio" id="spades" name="cardType" checked>Spades
+                </label>
+                <label for="hearts">
+                    <input type="radio" id="hearts" name="cardType">Hearts
+                </label>
+            </div>     
+            <!--Checkboxes example -->
+            <div>
+                <label for="red">
+                    <input type="checkbox" id="red" name="color" checked>Red
+                </label>
+                <label for="yellow">
+                    <input type="checkbox" id="yellow" name="color">Yellow
+                </label>
+                <label for="blue">
+                    <input type="checkbox" id="blue" name="color">Blue
+                </label>
+            </div>         
+            <!--Submit button to action from button type submit-->
+            <button type="submit">Submit</button>
+        </form>
+        <br>
+        <label>Dogs love:</label>
+        <ul>
+            <li>Bones</li>
+            <li>Playing</li>
+            <li>Water</li>
+        </ul>
+        <label>Cats hate:</label>
+        <ol>
+            <li>Water</li>
+            <li>Heat</li>
+            <li>Dirt</li>
+        </ol>
         <br>
         <footer id="footer">
             <p>Footer for additional info about the web world.</p>
