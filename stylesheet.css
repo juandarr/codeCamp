@@ -1,3 +1,9 @@
+:root {
+    --colorBg: rgb(200,200,250);
+    --bodyBg: rgb(200,250,200);
+}
+
+
 .toCenter {
     width: 300px;
     border: 5px solid yellowgreen;
@@ -12,6 +18,11 @@
     color:gray;
 }
 
+body {
+    background-color: var(--bodyBg, white);
+    font-family:Roboto !important;
+}
+
 h1 {
     color:cyan;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -19,6 +30,7 @@ h1 {
     font-size: 40px;
     padding: 10px;
     text-align: center;
+    margin:10px;
 }
 
 p {
@@ -28,13 +40,22 @@ p {
 }
 
 .silver-bg {
-    background-color:silver;
+    background-color: var(--colorBg, white);
     font-family: Roboto;
+    padding:10px;
+    margin-bottom:20px;
+}
+
+.purpleRain {
+    background-color: var(--colorBg, rgb(250,200,200));
+    font-family: Roboto;
+    padding:10px;
 }
 
 #aceOfHearts {
     background-color: azure;
     padding: 20px;
+    margin-top:20px;
 }
 
 [type='radio']{
@@ -43,4 +64,14 @@ p {
 
 .mini-text {
     font-size: 0.8em;
+}
+
+@media (max-width:1200px) {
+    :root {
+        --bodyBg: rgb(200,100,120);
+    }
+
+    .redColor {
+        color:yellow;
+    }
 }
