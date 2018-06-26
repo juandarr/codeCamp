@@ -112,6 +112,25 @@ a:hover {
     background-color:black;
 }
 
+.squares {
+    display: inline-block;
+    content:"";
+    padding:10px;
+    margin: 10px;
+    width:80px;
+    height: 80px;
+}
+
+.color-block {
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+    width: 600px;
+    margin:auto;
+    display:block;
+}
+
 @media (max-width:1200px) {
     :root {
         --bodyBg: rgb(200,100,120);
